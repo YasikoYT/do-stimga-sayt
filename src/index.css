@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #000000;
+    background-color: #fafafa;
+    letter-spacing: -0.01em;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Outfit', 'Space Grotesk', system-ui, sans-serif;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Subtle dot pattern exactly matching screenshot */
+.bg-subtle-dots {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Hero outline text stroke with bold visible stroke and rich solid dark fill */
+.text-outline-black {
+  -webkit-text-stroke: 2px #000000;
+  color: rgba(0, 0, 0, 0.15);
+  letter-spacing: -0.02em;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: cursorBlink 1s infinite;
+}
+
+
+
